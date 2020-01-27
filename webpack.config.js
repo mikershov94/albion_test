@@ -3,6 +3,7 @@ const fs = require('fs');
 
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const PATHS = {
     src: path.join(__dirname, './src'),
@@ -103,7 +104,11 @@ module.exports = {
         ...PAGES.map((page) => new HtmlWebpackPlugin({
             template: `${PAGES_DIR}/${page}`,
             filename: `./${page.replace(/\.pug$/, '.html')}`
-        }))
+        })),
+
+        new CopyWebpackPlugin([
+            { from: './public/img', to: `${PATHS.dist}/img` }
+        ]),
     ],
 
 }
