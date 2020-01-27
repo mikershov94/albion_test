@@ -1,0 +1,72 @@
+@font-face {
+	font-family: 'Sansation';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/public/fonts/SansationRegular.eot'); /* IE9 Compat Modes */
+	src: local('Sansation Regular'), local('Sansation-Regular'),
+		 url('/public/fonts/SansationRegular.eot?#iefix') format('embedded-opentype'),
+		 url('/public/fonts/SansationRegular.woff2') format('woff2'),
+		 url('/public/fonts/SansationRegular.woff') format('woff'),
+		 url('/public/fonts/SansationRegular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Myriad Pro';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/public/fonts/MyriadPro.eot'); /* IE9 Compat Modes */
+	src: local('Myriad Pro Regular'), local('MyriadPro-Regular'),
+		 url('/public/fonts/MyriadPro.eot?#iefix') format('embedded-opentype'),
+		 url('/public/fonts/MyriadPro.woff2') format('woff2'),
+		 url('/public/fonts/MyriadPro.woff') format('woff'),
+		 url('/public/fonts/MyriadPro.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Neoteric';
+	font-style: bold;
+	font-weight: 400;
+	src: url('/public/fonts/NEOTERIC.eot'); /* IE9 Compat Modes */
+	src: local('Neoteric Bold'), local('Neoteric-Bold'),
+		 url('/public/fonts/NEOTERIC.eot?#iefix') format('embedded-opentype'),
+		 url('/public/fonts/NEOTERIC.woff2') format('woff2'),
+		 url('/public/fonts/NEOTERIC.woff') format('woff'),
+		 url('/public/fonts/NEOTERIC.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'MaterialIcons';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/public/fonts/MaterialIcons-Regular.eot'); /* IE9 Compat Modes */
+	src: local('Material Icons'), local('MaterialIcons-Regular'),
+		 url('/public/fonts/MaterialIcons-Regular.eot?#iefix') format('embedded-opentype'),
+		 url('/public/fonts/MaterialIcons-Regular.woff2') format('woff2'),
+		 url('/public/fonts/MaterialIcons-Regular.woff') format('woff'),
+		 url('/public/fonts/MaterialIcons-Regular.ttf') format('truetype');
+}
+
+.material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;  /* Preferred icon size */
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+  
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+  
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+  
+	/* Support for IE. */
+	font-feature-settings: 'liga';
+  }
