@@ -1,21 +1,13 @@
-.header
-    background: url('/img/banner.png') no-repeat
-    background-size: 100% 46.5rem 
-    height: 46.5rem
+@import "./navbar/navbar.sass";
 
-    &__nav
-        font-family: 'Sansation', sans-serif
-        display: flex
-        align-items: center
+=header()
+    .header
+        background: url('/img/banner.png') no-repeat
+        background-size: 100% 46.5rem 
+        height: 46.5rem
 
-        a
-            text-decoration: none
-            color: white
-            margin-top: 2rem
-           
+        +navbar()
 
-    &__logo
-        height: 1.5rem
-        margin: 1.9rem 2.6rem
+
         
         

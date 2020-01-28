@@ -1,8 +1,5 @@
+include ./navbar/navbar
+
 mixin header()
     header.header
-        
-        nav.header__nav
-            img(src="/img/logo.png" class="header__logo")
-
-            .header__navlink
-                a(href="#") Home
+        +navbar()
