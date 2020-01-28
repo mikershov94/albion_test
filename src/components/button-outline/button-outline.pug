@@ -1,5 +1,8 @@
-mixin button-outline(text, icon=false)
+mixin button-outline(text, icon=false, name='primary')
     if (icon)
-        button(class="btn-outline material-icons")= text
+        -var className = 'btn-outline' + ' btn-outline_' + name
+        button(class=className)
+            i(class="material-icons")= text
     else
-        button(class="btn-outline")= text
+        -var className = 'btn-outline' + ' btn-outline_' + name
+        button(class=className)= text

@@ -1,20 +1,21 @@
 =btn-outline($width: 8rem, $height: 2rem, $border-width: 1px, $text-color: white, $border-color: white)
-    width: $width
-    height: $height
-    background: none
-    border: $border-width solid $border-color
-    font-family: 'Sansation', sans-serif
-    font-size: 1em
-    font-style: bold
-    color: $text-color
-    text-transform: uppercase
-    cursor: pointer
-    outline: none
+    .btn-outline
+        width: $width
+        height: $height
+        background: none
+        border: $border-width solid $border-color
+        font-family: 'Sansation', sans-serif
+        font-size: 1em
+        font-style: bold
+        color: $text-color
+        text-transform: uppercase
+        cursor: pointer
+        outline: none
 
-    &:hover
-        background: white
-        color: $dark-grey
-    
-    &:active
-        background: $dark-grey
-        color: white
+        &:hover
+            background: white
+            color: $dark-grey
+        
+        &:active
+            background: $dark-grey
+            color: white
