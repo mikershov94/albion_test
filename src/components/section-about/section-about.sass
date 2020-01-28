@@ -1,3 +1,5 @@
+@import "../button/button.sass";
+
 =section-about()
     .about-us
         display: flex
@@ -17,6 +19,7 @@
                 word-spacing: 0.1rem
                 margin-left: 3.7rem
                 margin-top: 4rem
+                margin-bottom: 2.5rem
                 padding-bottom: 0.5rem
                 width: 33rem
                 border-bottom: 2px solid $dark-grey
@@ -32,5 +35,17 @@
 
 
             p
-                width: 20rem
-            
+                width: 33rem
+                margin-left: 3.7rem
+                font-family: 'Sansation', sans-serif
+                font-size: 1.1em
+                color: $dark-grey
+                line-height: 1.2em
+                margin-bottom: 0
+    
+    +btn()
+    .btn_about-us
+        margin: 3.7rem
+        width: 13.5rem
+
+
