@@ -2,6 +2,8 @@
     .navbar
         display: flex
         align-items: center
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5)
+        height: 5.2rem
 
         &__logo
             height: 1.5rem
@@ -9,11 +11,20 @@
 
         &__menu
             font-family: 'Sansation', sans-serif
+            font-size: 1.25em
             display: flex
             align-items: center
+            margin-left: 2.5rem
 
         &__navlink
+            width: 6rem
+            margin-right: 1.25rem
+            margin-left: 1.25rem
+            text-align: center
             a
                 text-decoration: none
                 color: white
                 margin-top: 2rem
+
+                &:hover
+                    color: $green

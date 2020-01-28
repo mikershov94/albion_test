@@ -107,7 +107,8 @@ module.exports = {
         })),
 
         new CopyWebpackPlugin([
-            { from: './public/img', to: `${PATHS.dist}/img` }
+            { from: './public/img', to: `${PATHS.dist}/img` },
+            { from: './public/fonts', to: `${PATHS.dist}/fonts` }
         ]),
     ],
 

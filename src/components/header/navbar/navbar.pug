@@ -1,7 +1,16 @@
+mixin navlink(text)
+    .navbar__navlink
+        a(href="#")=text
+
 mixin navbar()
     nav.navbar
         img(src="/img/logo.png" class="navbar__logo")
 
         .navbar__menu
-            .navbar__navlink
-                    a(href="#") Home
+            +navlink('Home')
+            +navlink('About')
+            +navlink('Services')
+            +navlink('Portfolio')
+            +navlink('Shop')
+            +navlink('Contact')
+            +navlink('Pages')
