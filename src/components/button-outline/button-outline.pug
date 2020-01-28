@@ -1,0 +1,5 @@
+mixin button-outline(text, icon=false)
+    if (icon)
+        button(class="btn-outline material-icons")= text
+    else
+        button(class="btn-outline")= text

@@ -1,9 +1,31 @@
+@import "../../button-outline/button-outline.sass";
+    
 =offer()
     .offer
+        position: relative
         margin: 10.5rem 19.5rem 0 19.5rem
-        border: 1px solid rgba(255, 255, 255, 0.5)
-        height: 16.5rem
+        border-top: 1px solid rgba(255, 255, 255, 0.3)
+        border-left: 1px solid rgba(255, 255, 255, 0.3)
+        border-right: 1px solid rgba(255, 255, 255, 0.3)
+        height: 15.5rem
         padding-top: 1rem
+
+        &::before,
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            height: 0
+            width: 16rem
+            top: 100%
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3)
+
+        &::before
+           left: -1px
+
+        &::after
+           right: -1px  
+            
 
 
         h1
@@ -21,3 +43,9 @@
             color: white
             width: 30rem
             margin: 0 auto
+
+        .btn-outline
+            +btn-outline(9.2rem, 3rem, 2px)
+            position: absolute
+            bottom: -1.5rem
+            left: 17.75rem
