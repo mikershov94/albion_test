@@ -4,6 +4,7 @@ include ./components/header/header
 include ./components/section-about/section-about
 include ./components/separator/separator
 include ./components/service/service
+include ./components/feedback/feedback
 
 block content
     +header()
@@ -13,3 +14,5 @@ block content
         +service()
         +service(true)
         +service()
+    +separator('Feedback')
+    +feedback()

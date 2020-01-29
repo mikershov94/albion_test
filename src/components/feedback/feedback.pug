@@ -1,0 +1,14 @@
+mixin worker(img)
+    .card
+        img(src=img class="card__foto")
+        .card__number
+        .card__description
+
+mixin feedback()
+    section(class="feedback")
+        article(class="feedback__description")
+            p It was always a pleasure doing bussiness with them. I love the quality of work.
+        .feedback__workers
+            +worker('/img/model-1.jpg')
+            +worker('/img/model-2.jpg')
+            +worker('/img/model-3.jpg')

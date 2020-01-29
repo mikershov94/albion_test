@@ -1,6 +1,8 @@
 =separator($background: white, $text-color: white)
     .separator
         position: relative
+        display: flex
+        justify-content: center
         margin-top: -0.5rem
         height: 11.5rem
         background: $background
@@ -8,7 +10,7 @@
 
         h2
             display: inline-block
-            margin: 4rem 29.5rem
+            margin: 4rem auto
             font-family: 'Sansation', sans-serif
             font-weight: normal
             font-size: 3.4em
@@ -28,7 +30,7 @@
                 left: 22.9rem
 
             &::after
-                right: 24.6rem
+                right: 22.9rem
 
         &::before,
         &::after
@@ -40,10 +42,10 @@
             border: 1px solid $text-color
 
         &::before
-            left: 3.1rem
+            left: 4.9rem
 
         &::after
-            right: 4.9rem
+            right: 3.1rem
 
     
 
