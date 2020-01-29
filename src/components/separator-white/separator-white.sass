@@ -1,0 +1,48 @@
+=separator-white($background: white, $text-color: $light-grey)
+    .separator_white
+        position: relative
+        display: flex
+        justify-content: center
+        margin-top: -0.5rem
+        height: 11.5rem
+        background: $background
+        color: $text-color
+
+        h2
+            display: inline-block
+            margin: 4rem auto
+            font-family: 'Sansation', sans-serif
+            font-weight: normal
+            font-size: 3.4em
+            text-transform: uppercase
+            text-align: center
+
+            &::before,
+            &::after
+                content: ''
+                position: absolute
+                top: 59%
+                width: 5.8rem
+                height: 0
+                border: 2px solid $text-color
+
+            &::before
+                left: 22.9rem
+
+            &::after
+                right: 22.9rem
+
+        &::before,
+        &::after
+            content: ''
+            position: absolute
+            top: 60%
+            width: 24rem
+            height: 0
+            border: 1px solid $text-color
+
+        &::before
+            left: 4.9rem
+
+        &::after
+            right: 3.1rem

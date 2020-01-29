@@ -1,3 +1,7 @@
-mixin separator(text)
-    section(class="separator")
+mixin separator(text, white=false)
+    - var className = 'separator'
+    if (white)
+        - className = 'separator_white'
+    
+    section(class=className)
         h2= text
