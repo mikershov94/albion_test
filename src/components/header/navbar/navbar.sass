@@ -2,14 +2,17 @@
     .navbar
         display: flex
         align-items: center
+        justify-content: center
         border-bottom: 2px solid rgba(255, 255, 255, 0.5)
         height: 5.2rem
 
         &__logo
+            flex-grow: 1
             height: 1.5rem
             margin: 1.9rem 2.6rem
 
         &__menu
+            flex-grow: 9
             font-family: 'Sansation', sans-serif
             font-size: 1.25em
             display: flex
@@ -30,6 +33,7 @@
                     color: $green
 
         &__follow
+            flex-grow: 1    
             margin-right: 0.7rem
             margin-left: 0.7rem
 
