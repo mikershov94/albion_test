@@ -1,0 +1,18 @@
+include ../button/button
+
+mixin service-content()
+    object(data="/icons/service.svg", type="image/svg+xml" class="services__img")
+
+    .services__text
+        h3 Web development
+        p We provide the best world class web development service We provide the best world class web development service
+
+    +button('More details', 'svc')
+
+mixin service(active=false)
+    if (active)
+        article(class="services__item services__item_active")
+            +service-content()
+    else
+        article(class="services__item")
+            +service-content()

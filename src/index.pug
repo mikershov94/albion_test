@@ -3,8 +3,13 @@ extends layouts/base
 include ./components/header/header
 include ./components/section-about/section-about
 include ./components/separator/separator
+include ./components/service/service
 
 block content
     +header()
     +section-about()
     +separator('Our services')
+    section(class="services")
+        +service()
+        +service(true)
+        +service()
