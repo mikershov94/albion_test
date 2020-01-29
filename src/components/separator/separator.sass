@@ -1,8 +1,52 @@
 =separator($background: white, $text-color: white)
     .separator
-        height: 7rem
+        position: relative
+        margin-top: -0.5rem
+        height: 11.5rem
         background: $background
         color: $text-color
 
         h2
-            margin: 0
+            display: inline-block
+            margin: 4rem 29.5rem
+            font-family: 'Sansation', sans-serif
+            font-weight: normal
+            font-size: 3.4em
+            text-transform: uppercase
+            text-align: center
+
+            &::before,
+            &::after
+                content: ''
+                position: absolute
+                top: 59%
+                width: 5.8rem
+                height: 0
+                border: 2px solid $text-color
+
+            &::before
+                left: 22.9rem
+
+            &::after
+                right: 24.6rem
+
+        &::before,
+        &::after
+            content: ''
+            position: absolute
+            top: 60%
+            width: 24rem
+            height: 0
+            border: 1px solid $text-color
+
+        &::before
+            left: 3.1rem
+
+        &::after
+            right: 4.9rem
+
+    
+
+                
+                
+                
