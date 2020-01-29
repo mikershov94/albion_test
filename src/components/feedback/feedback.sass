@@ -1,21 +1,60 @@
+=worker()
+    .card
+        margin-top: 2.8rem
+        position: relative
+        font-family: 'Sansation', sans-serif
+        font-size: 0.8em
+
+        &__foto
+            height: 19rem
+            margin-left: 0.75rem
+            margin-right: 0.75rem
+
+        &__number
+            width: 4rem
+            height: 2.8rem
+            background: white
+            display: flex
+            align-items: center
+            justify-content: center
+            position: absolute
+            bottom: 3.5rem
+            left: 1.4rem
+
+        &__description
+            width: 11rem
+            height: 2.6rem
+            background: white
+            position: absolute
+            bottom: 3.7rem
+            left: 6rem
+            padding-left: 0.4rem
+
+        &__name
+            margin-top: 0.2rem
+
+
 =feedback()
     .feedback
+        position: relative
         height: 24.5rem
         display: flex
         background: $light-grey
 
         &__description
+            position: relative
             flex-grow: 2
             
 
             p
                 position: relative
                 font-family: 'Sansation', sans-serif
-                color: white
+                color: rgba(255, 255, 255, 0.7)
                 width: 20rem
                 line-height: 1.4em
                 text-align: center
                 margin: 5.9rem auto
+                margin-bottom: 4.3rem
                 font-size: 1.6em
 
                 &::after
@@ -26,9 +65,46 @@
                     width: 5rem
                     top: 118%
                     left: 38%
+                    
+
+        &__panel
+            color: rgba(255, 255, 255, 0.7)
+            font-family: 'Sansation', sans-serif
+            font-size: 1.3em
+            text-align: center
+            
+            
+        &__back
+            position: absolute
+            left: 3rem
+            cursor: pointer
+            &:hover
+                color: white
+
+            i
+                font-size: 2em
+
+        &__next
+            position: absolute
+            left: 18rem
+            cursor: pointer
+            &:hover
+                color: white
+
+            i
+                font-size: 2em
+
+        &__count
+            position: absolute
+            margin-top: 0.3rem
+            left: 10.9rem
+            i
+                font-size: 1.8em            
 
         &__workers
             flex-grow: 3
             display: flex
             
             justify-content: center
+
+    +worker()
