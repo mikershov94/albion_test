@@ -1,11 +1,12 @@
+@import "../input/input.sass";
+
 =form()
     .form
         display: flex
-        
+        background: $green
         height: 14.5rem
 
         &__text
-            background: grey
             flex-grow: 1
             article
                 margin: 2rem 3rem
@@ -23,4 +24,7 @@
 
         &__inputs
             flex-grow: 7
-            background: $green
+            padding: 5.4rem 0rem 5.4rem 4.5rem
+            +btn(white, $green, 9rem, 3.6rem)
+
+    +input()

@@ -1,4 +1,4 @@
-include ../button/button
+include ../input/input
 
 mixin form()
     section.form
@@ -9,6 +9,4 @@ mixin form()
 
 
         .form__inputs
-            input(type="text")
-            input(type="text")
-            +button('Get a call')
+            +input('Your name', 'Your number')

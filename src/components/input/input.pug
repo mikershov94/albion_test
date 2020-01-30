@@ -1,0 +1,7 @@
+include ../button/button
+
+mixin input(placeholder1, placeholder2)
+    form.input
+        input(type='text' placeholder=placeholder1 class="input__text")
+        input(type='text' placeholder=placeholder2 class="input__text")
+        +button('Get a call')
