@@ -1,0 +1,14 @@
+include ../button/button
+
+mixin form()
+    section.form
+        .form__text
+            article
+                h3 Any Queries | Get a quote
+                p If you have any questions or queries regarding our service or pricing don't worry <br> Our experts will call you
+
+
+        .form__inputs
+            input(type="text")
+            input(type="text")
+            +button('Get a call')
