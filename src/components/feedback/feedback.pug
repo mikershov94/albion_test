@@ -9,13 +9,14 @@ mixin worker(img)
 mixin feedback()
     section(class="feedback")
         article(class="feedback__description")
-            p It was always a pleasure doing bussiness with them. I love the quality of work.
-            .feedback__panel
-                span.feedback__back
-                    i.material-icons arrow_back_ios
-                span.feedback__count 1/10
-                span.feedback__next
-                    i.material-icons arrow_forward_ios
+            article
+                p It was always a pleasure doing bussiness with them. I love the quality of work.
+                .feedback__panel
+                    span.feedback__back
+                        i.material-icons arrow_back_ios
+                    span.feedback__count 1/10
+                    span.feedback__next
+                        i.material-icons arrow_forward_ios
         .feedback__workers
             +worker('/img/model-1.jpg')
             +worker('/img/model-2.jpg')

@@ -1,0 +1,36 @@
+=footer()
+    .footer
+        background: $light-grey
+        height: 18rem
+        display: flex
+
+        &__links
+            display: flex
+            font-family: 'Sansation', sans-serif
+            color: white  
+            margin: 2.5rem 3rem
+
+        &__nav
+            position: relative
+            flex-grow: 1
+            margin: 0rem 4rem 2rem 0
+            h3
+                margin: 0
+                text-transform: uppercase
+                margin-bottom: 1.5rem
+                &::after
+                    content: ''
+                    position: absolute
+                    height: 0
+                    border-bottom: 1px solid white
+                    width: 2.8rem
+                    top: 1.45rem
+                    left: 0
+        
+        &__navlink
+            display: block
+            text-decoration: none
+            color: white
+            margin-bottom: 1.5rem
+            &:hover
+                text-decoration: underline
