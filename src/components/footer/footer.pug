@@ -1,3 +1,10 @@
+include ../button/button
+
+mixin soc_link(src)
+    .soc-wrapper
+        img(src=src)
+
+
 mixin footer()
     footer.footer
         .footer__links
@@ -20,5 +27,13 @@ mixin footer()
                 a(href="#" class="footer__navlink") Partners
                 a(href="#" class="footer__navlink") Contact
         .footer__subscribe
-            input(type="text")
+            .footer__input
+                input(type="text" placeholder="Your email")
+                +button('Subscribe', 'subscribe')
             .footer__social
+                +soc_link('/icons/fb.png')
+                +soc_link('/icons/tw.png')
+                +soc_link('/icons/gp.png')
+                +soc_link('/icons/behance.png')
+                +soc_link('/icons/dribble.png')
+                +soc_link('/icons/inst.png')
